@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "alfred-blog",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "Alfred blog powered by Gatsby.js",
+  "version": "0.0.1",
+  "author": "Alfred<lianghongbuaa@gmail.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/i5possible/gatsby-blog/issues"
   },
   "dependencies": {
     "@fontsource/merriweather": "^5.0.3",
@@ -28,14 +28,14 @@
   "devDependencies": {
     "prettier": "^2.8.8"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://github.com/i5possible/gatsby-blog",
   "keywords": [
-    "gatsby"
+    "alfred", "gatsby", "blog"
   ],
-  "license": "0BSD",
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/i5possible/gatsby-blog.git"
   },
   "scripts": {
     "build": "gatsby build",

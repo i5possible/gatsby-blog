@@ -9,15 +9,15 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Alfred Blog`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Hong(Alfred) Liang`,
+      summary: `Digital architects, meticulously constructing order from chaos in the virtual realm`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: `Welcome to our blog, where we embrace the role of digital architects, meticulously constructing order from chaos in the virtual realm. Here, we delve into the intricate world of technology and coding, unraveling the complexities of digital landscapes and showcasing the art of transforming disorder into elegant solutions. Join us on this journey as we explore the fascinating realm of programming, sharing insights, tutorials, and innovative ideas that empower you to navigate the digital universe with precision and creativity. Our mission is to inspire and equip you to master the craft of digital architecture, one pixel at a time.`,
+    siteUrl: `blog.i5possible.xyz`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `HongLiang10`,
     },
   },
   plugins: [
@@ -102,7 +102,7 @@ module.exports = {
               }
             }`,
             output: "/rss.xml",
-            title: "Gatsby Starter Blog RSS Feed",
+            title: "Alfred Blog RSS Feed",
           },
         ],
       },
@@ -110,15 +110,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `Gatsby`,
+        name: `Alfred Blog`,
+        short_name: `alfred`,
         start_url: `/`,
         background_color: `#ffffff`,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/profile-pic.png`, // This path is relative to the root of the site.
       },
     },
   ],
