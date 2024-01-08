@@ -15,7 +15,7 @@ module.exports = {
       summary: `Digital architects, meticulously constructing order from chaos in the virtual realm`,
     },
     description: `Welcome to our blog, where we embrace the role of digital architects, meticulously constructing order from chaos in the virtual realm. Here, we delve into the intricate world of technology and coding, unraveling the complexities of digital landscapes and showcasing the art of transforming disorder into elegant solutions. Join us on this journey as we explore the fascinating realm of programming, sharing insights, tutorials, and innovative ideas that empower you to navigate the digital universe with precision and creativity. Our mission is to inspire and equip you to master the craft of digital architecture, one pixel at a time.`,
-    siteUrl: `blog.i5possible.xyz`,
+    siteUrl: `https://github.com/i5possible/gatsby-blog`,
     social: {
       twitter: `HongLiang10`,
     },
