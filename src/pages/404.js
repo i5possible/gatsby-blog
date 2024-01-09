@@ -3,13 +3,14 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import { Box } from "@chakra-ui/react";
 
 const NotFoundPage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
 
   return (
     <Layout location={location} title={siteTitle}>
-      <h1>404: Not Found</h1>
+      <Box textStyle={'h2'}>404: Not Found</Box>
       <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
     </Layout>
   )

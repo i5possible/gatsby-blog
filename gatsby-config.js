@@ -121,5 +121,12 @@ module.exports = {
         icon: `src/images/profile-pic.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: '@chakra-ui/gatsby-plugin',
+      options: {
+        resetCSS: true,
+        portalZIndex: undefined,
+      },
+    }
   ],
 }
