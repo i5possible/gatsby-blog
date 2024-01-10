@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
@@ -20,15 +20,18 @@ const BlogPostTemplate = ({
       >
         <header>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
+          <p>
+            <span>{post.frontmatter.date}</span>
+            <span>{post.timeToRead} min read</span>
+          </p>
         </header>
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
         />
-        <hr />
+        <hr/>
         <footer>
-          <Bio />
+          <Bio/>
         </footer>
       </article>
       <nav className="blog-post-nav">
@@ -87,6 +90,7 @@ export const pageQuery = graphql`
       id
       excerpt(pruneLength: 160)
       html
+      timeToRead
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
