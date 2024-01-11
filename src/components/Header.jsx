@@ -25,7 +25,6 @@ const Header = () => {
       bg={scrolled ? 'chakra-body-bg' : 'transparent'}
       align="center"
       justify="center"
-      paddingY="2"
       position="fixed"
       top={0}
       zIndex="docked"
