@@ -8,6 +8,7 @@
 import * as React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import { HStack, Text, VStack } from "@chakra-ui/react";
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -31,7 +32,7 @@ const Bio = () => {
   const social = data.site.siteMetadata?.social
 
   return (
-    <div className="bio">
+    <HStack>
       <StaticImage
         className="bio-avatar"
         layout="fixed"
@@ -42,16 +43,14 @@ const Bio = () => {
         quality={95}
         alt="Profile picture"
       />
-      {author?.name && (
-        <p>
-          Written by <strong>{author.name}</strong> {author?.summary || null}
-          {` `}
-          <a href={`https://twitter.com/${social?.twitter || ``}`}>
-            You should follow them on Twitter
-          </a>
-        </p>
-      )}
-    </div>
+      <VStack>
+        {author?.name && (
+          <Text as={'span'} textStyle={'body1'}>
+            Written by <strong>{author.name}</strong>
+          </Text>
+        )}
+      </VStack>
+    </HStack>
   )
 }
 
