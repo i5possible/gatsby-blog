@@ -29,9 +29,9 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <Section>
         <Bio/>
-        <VStack gap={4} align={'stretch'}>
+        <VStack gap={4} align={'center'} justify={'center'}>
           {posts.map((post) =>
-            <ArticleCard post={post}/>
+            <ArticleCard post={post} />
           )}
         </VStack>
       </Section>

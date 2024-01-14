@@ -4,7 +4,7 @@ import { Box } from "@chakra-ui/react";
 
 const Footer = () => (
   <Section >
-    <Box as={'footer'} position={'fixed'} bottom={0}>
+    <Box as={'footer'} position={'absolute'} bottom={0}>
       © {new Date().getFullYear()} CopyRight
     </Box>
   </Section>

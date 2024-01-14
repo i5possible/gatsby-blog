@@ -15,17 +15,15 @@ const semanticTokens = {
     "chakra-body-text-inverse": { _light: "whiteAlpha.900", _dark: "gray.800" },
     "chakra-body-text-secondary": { _light: "gray.500", _dark: "gray.500" },
     "chakra-body-bg": { _light: "gray.100", _dark: "gray.800" },
+    "chakra-body-bg-inverse": { _light: "gray.800", _dark: "gray.200" },
     "chakra-border-color": { _light: "gray.300", _dark: "whiteAlpha.300" },
-    "chakra-subtle-bg": { _light: "gray.200", _dark: "gray.700" },
+    "chakra-subtle-bg": { _light: "gray.200", _dark: "gray.800" },
     "chakra-subtle-text": { _light: "gray.600", _dark: "gray.400" },
     "chakra-placeholder-color": { _light: "gray.500", _dark: "whiteAlpha.400" },
   },
 }
 
 const colors = {
-  ...(
-    semanticTokens.colors
-  ),
   transparent: "transparent",
   current: "currentColor",
   black: "#000000",

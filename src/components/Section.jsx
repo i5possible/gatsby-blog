@@ -5,7 +5,7 @@ const Section = ({ children }) => {
   return (
     <Box
       maxWidth="1440px"
-      padding="40px 80px"
+      padding={[ "12px 24px","40px 80px"]}
       marginX="auto" // Centers the section
       width="100%"  // Ensures it takes up full width of the container
     >
