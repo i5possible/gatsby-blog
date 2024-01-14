@@ -22,7 +22,7 @@ const Header = () => {
     <Flex
       as="header"
       width="100%"
-      bg={scrolled ? 'chakra-body-bg' : 'transparent'}
+      bg={scrolled ? 'chakra-brand-secondary' : 'transparent'}
       align="center"
       justify="center"
       position="fixed"

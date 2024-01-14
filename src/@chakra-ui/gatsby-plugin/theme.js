@@ -8,8 +8,8 @@ const config = {
 
 const semanticTokens = {
   colors: {
-    "chakra-brand": "zomp",
-    "chakra-brand-secondary": "emerald",
+    "chakra-brand":  { _light: "zomp", _dark: "zomp"},
+    "chakra-brand-secondary": { _light: "emerald-dark", _dark: "emerald"},
     "chakra-body-text": { _light: "gray.800", _dark: "whiteAlpha.900" },
     "chakra-inverse-text": { _light: "whiteAlpha.900", _dark: "gray.800" },
     "chakra-body-text-inverse": { _light: "whiteAlpha.900", _dark: "gray.800" },
@@ -31,6 +31,7 @@ const colors = {
   black: "#000000",
   white: "#FFFFFF",
   emerald: '#61D095',
+  "emerald-dark": '#61B095',
   zomp: "#439775",
 
   whiteAlpha: {
