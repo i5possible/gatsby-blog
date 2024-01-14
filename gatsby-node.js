@@ -39,7 +39,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   }
 
   let posts = result.data.allMarkdownRemark.nodes
-  posts.map(post => console.log(post.fields.slug))
+  // posts.map(post => console.log(post.fields.slug))
   posts = posts.filter(post => !post.fields.slug.toLowerCase().includes('[wip]'))
 
 

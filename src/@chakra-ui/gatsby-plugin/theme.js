@@ -5,12 +5,17 @@ const config = {
   useSystemColorMode: false,
   cssVarPrefix: 'alfred',
 }
+
 const semanticTokens = {
   colors: {
+    "chakra-brand": "zomp",
+    "chakra-brand-secondary": "emerald",
     "chakra-body-text": { _light: "gray.800", _dark: "whiteAlpha.900" },
+    "chakra-inverse-text": { _light: "whiteAlpha.900", _dark: "gray.800" },
+    "chakra-body-text-inverse": { _light: "whiteAlpha.900", _dark: "gray.800" },
+    "chakra-body-text-secondary": { _light: "gray.500", _dark: "gray.500" },
     "chakra-body-bg": { _light: "gray.100", _dark: "gray.800" },
     "chakra-border-color": { _light: "gray.300", _dark: "whiteAlpha.300" },
-    "chakra-inverse-text": { _light: "white", _dark: "gray.800" },
     "chakra-subtle-bg": { _light: "gray.200", _dark: "gray.700" },
     "chakra-subtle-text": { _light: "gray.600", _dark: "gray.400" },
     "chakra-placeholder-color": { _light: "gray.500", _dark: "whiteAlpha.400" },
@@ -25,6 +30,8 @@ const colors = {
   current: "currentColor",
   black: "#000000",
   white: "#FFFFFF",
+  emerald: '#61D095',
+  zomp: "#439775",
 
   whiteAlpha: {
     50: "rgba(255, 255, 255, 0.04)",
@@ -53,16 +60,15 @@ const colors = {
   },
 
   gray: {
-    50: "#F7FAFC",
-    100: "#EDF2F7",
-    200: "#E2E8F0",
-    300: "#CBD5E0",
-    400: "#A0AEC0",
-    500: "#718096",
-    600: "#4A5568",
-    700: "#2D3748",
-    800: "#1A202C",
-    900: "#171923",
+    100: "#F5F5F5",
+    200: "#E0E0E0",
+    300: "#BDBDBD",
+    400: "#9E9E9E",
+    500: "#7E7E7E",
+    600: "#616161",
+    700: "#424242",
+    800: "#303030",
+    900: "#212121",
   },
 
   red: {
@@ -260,7 +266,6 @@ const colors = {
     900: "#003F5E",
   },
 }
-
 
 const typography = {
   fonts: {
@@ -504,10 +509,26 @@ const transition = {
   duration: transitionDuration,
 }
 
-const components = {
+const components = {}
 
+const styles = {
+  global: {
+    body: {
+      fontFamily: "body",
+      color: "chakra-body-text",
+      bg: "chakra-body-bg",
+      transitionProperty: "background-color",
+      transitionDuration: "normal",
+      lineHeight: "base",
+    },
+    "*::placeholder": {
+      color: "chakra-placeholder-color",
+    },
+    "*, *::before, &::after": {
+      borderColor: "chakra-border-color",
+    },
+  },
 }
-
 // https://github.com/chakra-ui/chakra-ui/blob/main/packages/theme/src/index.ts
 const theme = {
   config,
@@ -521,6 +542,8 @@ const theme = {
   shadows,
   breakpoints,
   ...transition,
+  semanticTokens,
+  styles,
 }
 
 export default extendTheme(theme)
