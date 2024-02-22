@@ -32,6 +32,7 @@
     "react-icons": "^5.0.1"
   },
   "devDependencies": {
+    "plop": "^4.0.1",
     "prettier": "^2.8.8"
   },
   "homepage": "https://github.com/i5possible/gatsby-blog",
@@ -52,6 +53,7 @@
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "plop": "plop"
   }
 }
